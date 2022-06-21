@@ -15,6 +15,11 @@ function countDown(){
     if(seconds < 10){
         seconds = `0${seconds}`;
     }
+
+    if(minute == 0 && seconds == 00){
+        minute = 10;
+        seconds == 00;
+    }
     timer.innerText = `${minute}:${seconds}`;
 }
 
